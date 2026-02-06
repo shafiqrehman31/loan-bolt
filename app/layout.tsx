@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+// REMOVE THIS LINE: import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Script from 'next/script';
@@ -42,7 +42,7 @@ export default function RootLayout({
         {/* Magnific Popup */}
         <link rel="stylesheet" href="/css/plugins/magnific-popup.css" />
         
-        {/* Your custom compiled CSS */}
+        {/* Your template CSS */}
         <link rel="stylesheet" href="/css/style.css" />
         
         {/* Favicon */}

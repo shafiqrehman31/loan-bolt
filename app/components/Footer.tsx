@@ -33,7 +33,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-xl-3">
             <Link href="/" className="mil-footer-logo mil-mb-60">
-              <img src="/img/logo.png" alt="Loan Bolt" width="200" height="32" />
+              <img src="/img/logo.png" alt="Loan Bolt" width="200" height="200" />
             </Link>
           </div>
           

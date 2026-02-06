@@ -19,7 +19,7 @@ export default function Header() {
     <div className="mil-top-panel">
       <div className="container">
         <Link href="/" className="mil-logo">
-          <img src="/img/logo.png" alt="Loan Bolt" width="200" height="32" />
+          <img src="/img/logo.png" alt="Loan Bolt" width="200" height="200" />
         </Link>
         
         <nav className={`mil-top-menu ${isMenuOpen ? 'mil-active' : ''}`}>

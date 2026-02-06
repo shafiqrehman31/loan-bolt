@@ -1,5 +1,4 @@
-import { Metadata } from 'next';
-
+import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms & Conditions - Loan Bolt',
   description: 'Terms and Conditions for Loan Bolt',
