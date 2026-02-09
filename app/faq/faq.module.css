@@ -1,0 +1,150 @@
+/* app/faq/faq.module.css */
+
+
+/* Hero Section */
+
+.faqHero {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 160px 0 80px;
+}
+
+
+/* Search Section */
+
+.faqSearch {
+    max-width: 600px;
+    margin: 0 auto 60px;
+}
+
+.searchBox {
+    position: relative;
+    width: 100%;
+}
+
+.searchBox i {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 18px 25px 18px 60px;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: #ffce00;
+    box-shadow: 0 0 0 3px rgba(255, 206, 0, 0.1);
+}
+
+.searchInput::placeholder {
+    color: #999;
+}
+
+.searchNote {
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* Content Section */
+
+.contentSection {
+    padding: 0 0 130px;
+}
+
+
+/* Stats Section */
+
+.statsSection {
+    background: #16213e;
+    color: white;
+    padding: 120px 0 90px;
+}
+
+.statItem {
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    height: 100%;
+    text-align: center;
+}
+
+.statItem:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.statIcon {
+    color: #ffce00;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.statTitle {
+    color: white !important;
+    margin-bottom: 10px;
+}
+
+.statDesc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin: 0;
+}
+
+
+/* Text Utilities */
+
+.textLg {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.lightText {
+    color: white !important;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .faqHero {
+        padding: 100px 0 60px;
+    }
+    .contentSection {
+        padding: 0 0 80px;
+    }
+    .statsSection {
+        padding: 80px 0 60px;
+    }
+    .statItem {
+        padding: 20px;
+    }
+    .searchInput {
+        padding: 15px 20px 15px 50px;
+    }
+    .searchBox i {
+        left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .faqHero {
+        padding: 80px 0 40px;
+    }
+    .faqSearch {
+        margin-bottom: 40px;
+    }
+}

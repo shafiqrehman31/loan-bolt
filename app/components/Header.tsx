@@ -39,10 +39,7 @@ export default function Header() {
           <Link href="/contact" className="mil-btn mil-sm">
             Loan Quote
           </Link>
-          <div 
-            className={`mil-menu-btn ${isMenuOpen ? 'mil-active' : ''}`}
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+          <div className={`mil-menu-btn ${isMenuOpen ? 'mil-active' : ''}`}  onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <span></span>
           </div>
         </div>

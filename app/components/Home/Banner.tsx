@@ -8,11 +8,12 @@ export default function Banner() {
           <div className="col-xl-6">
             <div className="mil-banner-text">
               <h6 className="mil-text-gradient-2 mil-mb-20">
-                Send money globally with Loan Bolt
+                Get quick funds with Loan Bolt
               </h6>
               <h1 className="mil-display mil-text-gradient-3 mil-mb-60">
-                Shop with Confidence, Protected
+                Borrow $100 – $5,000
               </h1>
+              <p>Flexible loan amounts to cover everyday needs and unexpected costs.</p><br></br>
               <div className="mil-buttons-frame">
                 <a href="/contact" className="mil-btn mil-md mil-add-arrow">
                    Loan Quote
@@ -23,11 +24,7 @@ export default function Banner() {
           </div>
           <div className="col-xl-6">
             <div className="mil-banner-img">
-              <img
-                src="/img/home-1/Slider.png"
-                alt="banner"
-                style={{ maxWidth: "125%", transform: "translateX(10%)" }}
-              />
+              <img src="/img/home-1/Slider.png" alt="banner" style={{ maxWidth: "125%", transform: "translateX(10%)" }}/>
             </div>
           </div>
         </div>

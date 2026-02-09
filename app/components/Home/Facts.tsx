@@ -8,28 +8,26 @@ export default function Facts() {
               <div className="col-xl-6 mil-sm-text-center mil-mb-30 mil-up">
                 <p className="h1 mil-display mil-mb-15">
                   <span className="mil-accent mil-counter" data-number="7">
-                    7
+                    500
                   </span>
-                  <span className="mil-pale">m</span>
+                  <span className="mil-pale">K+</span>
                 </p>
-                <h5>Registered Users</h5>
+                <h5>Issued Payments</h5>
               </div>
               <div className="col-xl-6 mil-sm-text-center mil-mb-80 mil-up">
                 <p className="h1 mil-display mil-mb-15">
-                  <span className="mil-accent mil-counter" data-number="170">
-                    170
+                  <span className="mil-accent mil-counter" data-number="50">
+                    50
                   </span>
-                  <span className="mil-pale">+</span>
+                  
                 </p>
-                <h5>Countries with our coverage</h5>
+                <h5>States Served</h5>
               </div>
             </div>
           </div>
           <div className="col-xl-5 mil-mb-80">
             <p className="mil-text-m mil-soft mil-up">
-              Dive into the data behind Loan Bolt's success. From the number of users 
-              to the extent of our global network, these facts and figures highlight 
-              our impact on the world of finance.
+             Our platform has successfully processed over 500,000 payments across 50 states, ensuring reliable and efficient transactions for businesses and individuals alike.
             </p>
           </div>
         </div>

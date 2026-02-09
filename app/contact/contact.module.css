@@ -1,0 +1,552 @@
+/* app/contact/contact.module.css */
+
+
+/* Hero Section */
+
+
+/* app/contact/contact.module.css */
+
+
+/* Hero Section */
+
+.contactHero {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 160px 0 80px;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.textLg {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/* Main Section */
+
+.mainSection {
+    padding: 0 0 130px;
+}
+
+
+/* Contact Info */
+
+.contactInfo {
+    padding: 50px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    height: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.infoHeader {
+    margin-bottom: 50px;
+}
+
+.infoHeader h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.infoHeader p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.contactItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.contactItem:hover {
+    transform: translateX(10px);
+}
+
+.contactIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 206, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.contactIcon i {
+    font-size: 24px;
+    color: #ffce00;
+}
+
+.contactDetails h4 {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.contactDetails p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.emailLink {
+    color: #ffce00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.socialLinks {
+    margin-top: 50px;
+}
+
+.socialLinks h5 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 15px;
+}
+
+.socialIcon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+    background: #ffce00;
+    color: #16213e;
+    transform: translateY(-5px);
+}
+
+
+/* Contact Form */
+
+.formContainer {
+    padding: 50px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.formHeader {
+    margin-bottom: 40px;
+}
+
+.formHeader h3 {
+    color: #16213e;
+    margin-bottom: 15px;
+}
+
+.formHeader p {
+    color: #666;
+}
+
+
+/* Alert Styles */
+
+.alert {
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.success {
+    background: rgba(76, 175, 80, 0.1);
+    color: #2e7d32;
+    border-left: 4px solid #4caf50;
+}
+
+.error {
+    background: rgba(244, 67, 54, 0.1);
+    color: #d32f2f;
+    border-left: 4px solid #f44336;
+}
+
+
+/* Form Element Styles */
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+    font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #ffce00;
+    box-shadow: 0 0 0 3px rgba(255, 206, 0, 0.1);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #999;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* CTA Section */
+
+.ctaSection {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 120px 0;
+    color: white;
+}
+
+.ctaContent {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ctaContent h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.ctaContent p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+
+/* FAQ Section */
+
+.faqSection {
+    padding: 120px 0;
+    background: #f8f9fa;
+}
+
+.faqHeader {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faqHeader h2 {
+    color: #16213e;
+    margin-bottom: 15px;
+}
+
+.faqHeader p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.faqGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.faqItem {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faqItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.faqIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 206, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.faqIcon i {
+    font-size: 20px;
+    color: #ffce00;
+}
+
+.faqItem h4 {
+    color: #16213e;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.faqItem p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* Button & Utility Styles */
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+    .contactHero {
+        padding: 120px 0 60px;
+    }
+    .mainSection {
+        padding: 0 0 80px;
+    }
+    .contactInfo,
+    .formContainer {
+        padding: 40px 30px;
+        margin-bottom: 30px;
+    }
+    .ctaSection {
+        padding: 80px 0;
+    }
+    .faqSection {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactHero {
+        padding: 100px 0 40px;
+    }
+    .contactItem {
+        flex-direction: column;
+    }
+    .contactIcon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .socialIcons {
+        justify-content: center;
+    }
+    .faqGrid {
+        grid-template-columns: 1fr;
+    }
+    .buttonGroup {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contactInfo,
+    .formContainer {
+        padding: 30px 20px;
+    }
+    .ctaSection {
+        padding: 60px 20px;
+    }
+    .faqSection {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactHero {
+        padding: 100px 0 40px;
+    }
+    .contactItem {
+        flex-direction: column;
+    }
+    .contactIcon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .socialIcons {
+        justify-content: center;
+    }
+    .faqGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .contactInfo,
+    .formContainer {
+        padding: 30px 20px;
+    }
+    .ctaSection {
+        padding: 60px 20px;
+    }
+    .faqSection {
+        padding: 60px 20px;
+    }
+}
+
+
+/* Add these styles to the existing contact.module.css */
+
+
+/* Alert Styles */
+
+.alert {
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.success {
+    background: rgba(76, 175, 80, 0.1);
+    color: #2e7d32;
+    border-left: 4px solid #4caf50;
+}
+
+.error {
+    background: rgba(244, 67, 54, 0.1);
+    color: #d32f2f;
+    border-left: 4px solid #f44336;
+}
+
+
+/* Form Element Styles */
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+    font-family: inherit;
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: #ffce00;
+    box-shadow: 0 0 0 3px rgba(255, 206, 0, 0.1);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: #999;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* Button Styles */
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Utility Classes */
+
+.flex {
+    display: flex;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.gap20 {
+    gap: 20px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+
+/* Responsive for button group */
+
+@media (max-width: 768px) {
+    .buttonGroup,
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gap20 {
+        gap: 15px;
+    }
+}
+
+
+/* Add this to contact.module.css if not already there */
+
+.textLg {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}

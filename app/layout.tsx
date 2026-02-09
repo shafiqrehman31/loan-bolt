@@ -46,8 +46,8 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/style.css" />
         
         {/* Favicon */}
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <div id="smooth-wrapper" className="mil-wrapper">
@@ -55,8 +55,8 @@ export default function RootLayout({
           <div className="mil-preloader">
             <div className="mil-load"></div>
             <p className="h2 mil-mb-30">
-              <span className="mil-light mil-counter" data-number="100">100</span>
-              <span className="mil-light">%</span>
+              <span className="mil-dark mil-counter" data-number="100">100</span>
+              <span className="mil-dark">%</span>
             </p>
           </div>
           

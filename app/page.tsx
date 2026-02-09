@@ -15,7 +15,7 @@ export default function HomePage() {
       <Facts />
       <CTASection />
       <Testimonials />
-      <Brands />
+     {/**  <Brands /> */}
       <FinalCTA />
       <FAQ />
     </>

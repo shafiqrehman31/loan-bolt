@@ -1,0 +1,321 @@
+/* app/privacy-policy/privacy.module.css */
+
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 160px 0 80px;
+    text-align: center;
+}
+
+.heroContent {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Content Section */
+
+.content {
+    padding: 80px 0 130px;
+    background: #ffffff;
+}
+
+
+/* Privacy Container */
+
+.privacyContainer {
+    background: white;
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+}
+
+
+/* Header Info */
+
+.headerInfo {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.effectiveDate {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.disclosureBox {
+    background: #e3f2fd;
+    border-left: 4px solid #2196f3;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.disclosureBox h4 {
+    color: #1976d2;
+    margin-bottom: 15px;
+}
+
+
+/* Privacy Sections */
+
+.privacySection {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.privacySection:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sectionNumber {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.sectionHeader h3 {
+    color: #16213e;
+    margin: 0;
+    flex: 1;
+}
+
+
+/* Section Content */
+
+.sectionContent {
+    color: #666;
+    line-height: 1.8;
+}
+
+.sectionContent p {
+    margin-bottom: 20px;
+}
+
+.sectionContent ul {
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.sectionContent li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+    padding-left: 10px;
+}
+
+.sectionContent strong {
+    color: #16213e;
+    font-weight: 600;
+}
+
+
+/* Highlight Lists */
+
+.infoList {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+.listHeader {
+    color: #16213e;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.listHeader i {
+    margin-right: 10px;
+    color: #2196f3;
+}
+
+
+/* Ping Tree Section */
+
+.pingTreeSection {
+    background: #fff8e1;
+    border-left: 4px solid #ffce00;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.pingStep {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pingStep:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.stepNumber {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffce00;
+    color: #16213e;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+
+/* Rights Section */
+
+.rightsSection {
+    background: #e8f5e9;
+    border-left: 4px solid #4caf50;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.rightItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.rightItem i {
+    color: #4caf50;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+
+/* Contact Section */
+
+.contactSection {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    margin-top: 60px;
+}
+
+.contactSection h4 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+}
+
+.contactItem i {
+    color: #ffce00;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+
+/* Text Utilities */
+
+.textLg {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 992px) {
+    .hero {
+        padding: 120px 0 60px;
+    }
+    .content {
+        padding: 60px 0 100px;
+    }
+    .privacyContainer {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 40px;
+    }
+    .content {
+        padding: 40px 0 80px;
+    }
+    .privacyContainer {
+        padding: 30px;
+    }
+    .sectionHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sectionNumber {
+        margin-bottom: 15px;
+    }
+    .pingStep {
+        flex-direction: column;
+    }
+    .stepNumber {
+        margin-bottom: 10px;
+    }
+    .contactSection {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 80px 0 30px;
+    }
+    .content {
+        padding: 30px 0 60px;
+    }
+    .privacyContainer {
+        padding: 20px;
+    }
+    .contactSection {
+        padding: 25px 15px;
+    }
+    .infoList,
+    .pingTreeSection,
+    .rightsSection {
+        padding: 20px 15px;
+    }
+}

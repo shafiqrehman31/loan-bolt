@@ -1,0 +1,217 @@
+/* app/faq/FAQContent.module.css */
+
+
+/* Category Tabs */
+
+.faqCategories {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+.tabsNav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tab {
+    padding: 10px 25px;
+    border: 2px solid #f0f0f0;
+    border-radius: 30px;
+    background: white;
+    color: #666;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.tab:hover {
+    border-color: #ffce00;
+    color: #16213e;
+}
+
+.tab.active {
+    background: #ffce00;
+    border-color: #ffce00;
+    color: #16213e;
+}
+
+
+/* FAQ Accordion */
+
+.accordionGroup {
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.accordionGroup.active {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.accordionMenu {
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.accordionMenu:hover {
+    background: #f8f9fa;
+}
+
+.accordionTitle {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.accordionTitle h5 {
+    color: #16213e;
+    font-weight: 600;
+    flex: 1;
+    margin: 0;
+}
+
+.faqBadge {
+    padding: 5px 15px;
+    background: rgba(255, 206, 0, 0.1);
+    color: #ffce00;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.accordionIcon {
+    margin-left: 20px;
+}
+
+.accordionIconInner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+.accordionGroup.active .accordionIconInner {
+    background: #ffce00;
+    color: white;
+    transform: rotate(180deg);
+}
+
+.accordionContent {
+    border-top: 1px solid #f0f0f0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.accordionAnswer {
+    padding: 25px 30px;
+    background: #f8f9fa;
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* Contact CTA */
+
+.faqCta {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 60px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 90px;
+}
+
+.contactBox {
+    text-align: center;
+}
+
+.contactBox h3 {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contactBox .contactText {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 40px;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .tabsNav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .tab {
+        text-align: center;
+    }
+    .accordionMenu {
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .accordionTitle {
+        width: 100%;
+        margin-bottom: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .accordionIcon {
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .faqCta {
+        padding: 40px 20px;
+        margin-top: 60px;
+    }
+    .buttonGroup {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .accordionMenu {
+        padding: 15px;
+    }
+    .accordionAnswer {
+        padding: 20px;
+    }
+    .faqCategories {
+        padding: 15px;
+    }
+    .faqCta {
+        padding: 30px 15px;
+        margin-top: 40px;
+    }
+}
