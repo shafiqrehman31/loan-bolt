@@ -27,7 +27,7 @@ export default function Facts() {
           </div>
           <div className="col-xl-5 mil-mb-80">
             <p className="mil-text-m mil-soft mil-up">
-             Our platform has successfully processed over 500,000 payments across 50 states, ensuring reliable and efficient transactions for businesses and individuals alike.
+             Our platform has successfully processed over 500,000 payments across 50 states, ensuring reliable and efficient transactions.
             </p>
           </div>
         </div>

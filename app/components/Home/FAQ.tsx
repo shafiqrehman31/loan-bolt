@@ -53,13 +53,9 @@ const faqItems = [
     question: "What security measures does Loan Bolt have to protect my transactions?",
     answer: "We use bank-level encryption, two-factor authentication, and real-time fraud monitoring to ensure your transactions are completely secure."
   },
+
   {
     id: 11,
-    question: "What is the coverage of the Loan Bolt network?",
-    answer: "Loan Bolt operates in over 170 countries worldwide, allowing you to send and receive money almost anywhere."
-  },
-  {
-    id: 12,
     question: "How can I contact Loan Bolt customer service?",
     answer: "You can contact our customer service team 24/7 through email at support@loanbolt.com or call us at +001 (808) 555-0111."
   }

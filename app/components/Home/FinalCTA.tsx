@@ -14,7 +14,7 @@ export default function FinalCTA() {
                 Join thousands of satisfied customers today.
               </p>
               <div className="mil-up">
-                <a href="/apply-now" className="mil-btn mil-md mil-add-arrow">
+                <a href="/contact" className="mil-btn mil-md mil-add-arrow">
                   Apply Now
                 </a>
               </div>
