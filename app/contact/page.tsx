@@ -85,7 +85,7 @@ export default function ContactPage() {
                     <div className={styles.contactDetails}>
                       <h4>Customer Support</h4>
                       <p>
-                        <strong className={styles.contactDetails} >General Inquiries:</strong>{' '}
+                        <strong className="gmcolor" >General Inquiries:</strong>{' '}
                         <a href="mailto:contact@loan-bolt.com" className={styles.emailLink}>
                           contact@loan-bolt.com
                         </a>

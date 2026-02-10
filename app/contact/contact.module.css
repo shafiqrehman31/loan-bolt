@@ -438,6 +438,10 @@
     }
 }
 
+.gmcolor {
+    color: #FFF !important;
+}
+
 
 /* Add these styles to the existing contact.module.css */
 
