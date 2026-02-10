@@ -8,7 +8,7 @@ Developer:	millerDigitalDesign (https://themeforest.net/user/millerdigitaldesign
 
 ------------------------------------------- */
 
-$(function () {
+$(function() {
 
     "use strict";
     /***************************
@@ -61,7 +61,7 @@ $(function () {
             ease: "sine",
             duration: .4,
             delay: '-0.7',
-            onComplete: function () {
+            onComplete: function() {
                 ScrollTrigger.refresh();
             },
         })
@@ -108,7 +108,7 @@ $(function () {
     back to top
 
     ***************************/
-    $(".mil-back-to-top").on("click", function () {
+    $(".mil-back-to-top").on("click", function() {
         gsap.to(window, {
             scrollTo: '0',
             duration: 1,
@@ -171,18 +171,18 @@ $(function () {
     var month = $("#month");
 
 
-    year.on('click', function () {
+    year.on('click', function() {
         $(this).addClass('mil-active');
         month.removeClass('mil-active');
-        price.each(function () {
+        price.each(function() {
             $(this).text($(this).data('year-price'));
         });
     });
 
-    month.on('click', function () {
+    month.on('click', function() {
         $(this).addClass('mil-active');
         year.removeClass('mil-active');
-        price.each(function () {
+        price.each(function() {
             $(this).text($(this).data('month-price'));
         });
     });
@@ -192,7 +192,7 @@ $(function () {
 
     ***************************/
     const number = $(".mil-counter");
-    number.each(function (index, element) {
+    number.each(function(index, element) {
         var count = $(this),
             zero = {
                 val: 0
@@ -208,7 +208,7 @@ $(function () {
                 trigger: element,
                 toggleActions: 'play none none reverse',
             },
-            onUpdate: function () {
+            onUpdate: function() {
                 count.text(zero.val.toFixed(decimals));
             }
         });
@@ -227,7 +227,7 @@ $(function () {
         }
     });
 
-    $('.mil-menu-btn').on('click', function () {
+    $('.mil-menu-btn').on('click', function() {
         $('.mil-menu-btn , .mil-top-menu').toggleClass('mil-active');
     });
     /***************************
@@ -235,7 +235,7 @@ $(function () {
     top panel scroll animation
 
     ***************************/
-    $(window).on("scroll", function () {
+    $(window).on("scroll", function() {
         var scroll = $(window).scrollTop();
 
         var isDesktop = $(window).width() > 768;
@@ -323,25 +323,25 @@ $(function () {
         let animation = gsap
             .timeline()
             .from(box, {
-                onStart: function () {
+                onStart: function() {
                     $(bg).addClass("mil-active");
                 },
-                onComplete: function () {
+                onComplete: function() {
                     ScrollTrigger.refresh();
                 },
                 height: 0,
             })
 
-            .from(boxText, {
-                opacity: 0,
-            }, '-=.2')
+        .from(boxText, {
+            opacity: 0,
+        }, '-=.2')
 
-            .from(icon, {
+        .from(icon, {
                 rotate: 90,
             }, 0)
             .reverse();
 
-        return function (clickedMenu) {
+        return function(clickedMenu) {
             if (clickedMenu === menu) {
                 animation.reversed(!animation.reversed());
                 $(bg).removeClass("mil-active");
@@ -367,9 +367,9 @@ $(function () {
         iframe: {
             patterns: {
                 youtube_short: {
-                index: 'youtu.be/',
-                id: 'youtu.be/',
-                src: 'https://www.youtube.com/embed/%id%?autoplay=1'
+                    index: 'youtu.be/',
+                    id: 'youtu.be/',
+                    src: 'https://www.youtube.com/embed/%id%?autoplay=1'
                 }
             }
         },

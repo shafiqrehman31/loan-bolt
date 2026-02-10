@@ -8,15 +8,15 @@ export default function Preloader() {
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
-    // Add class to body
-    document.body.classList.add('mil-preloader-active');
+    // Immediately show content to prevent FOUC
+    document.body.classList.remove('mil-preloader-active');
 
     // Function to simulate loading progress
     const simulateProgress = () => {
       let current = 0;
       const target = 100;
-      const duration = 1500; // 1.5 seconds total
-      const steps = 60; // 60 steps
+      const duration = 1500;
+      const steps = 60;
       const increment = target / steps;
       const intervalTime = duration / steps;
 
@@ -31,8 +31,7 @@ export default function Preloader() {
           // Hide preloader after a short delay
           setTimeout(() => {
             setLoading(false);
-            document.body.classList.remove('mil-preloader-active');
-          }, 500);
+          }, 300);
         } else {
           setProgress(Math.floor(current));
         }
@@ -44,18 +43,18 @@ export default function Preloader() {
     // Start the progress simulation
     const progressInterval = simulateProgress();
 
-    // Fallback: hide preloader after max 3 seconds
+    // Fallback: hide preloader after max 2.5 seconds
     const timeoutId = setTimeout(() => {
       setProgress(100);
       setIsComplete(true);
-      setLoading(false);
-      document.body.classList.remove('mil-preloader-active');
-    }, 3000);
+      setTimeout(() => {
+        setLoading(false);
+      }, 300);
+    }, 2500);
 
     return () => {
       clearInterval(progressInterval);
       clearTimeout(timeoutId);
-      document.body.classList.remove('mil-preloader-active');
     };
   }, []);
 
@@ -69,15 +68,16 @@ export default function Preloader() {
         left: 0,
         width: '100%',
         height: '100%',
-        background: '#ffce00', // Yellow background
+        background: '#ffce00',
         zIndex: 99999,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        transition: 'opacity 0.5s ease, transform 0.5s ease'
+        transition: 'opacity 0.5s ease, transform 0.5s ease',
+        opacity: isComplete ? 0 : 1,
+        pointerEvents: 'none'
       }}
-      className={isComplete ? 'mil-preloader-complete' : ''}
     >
       {/* Animated circles effect */}
       <div 
@@ -153,7 +153,7 @@ export default function Preloader() {
         style={{
           fontSize: '48px',
           fontWeight: '700',
-          color: '#16213e', // Dark text on yellow
+          color: '#16213e',
           marginBottom: '10px',
           fontFamily: 'inherit'
         }}
@@ -166,7 +166,7 @@ export default function Preloader() {
         style={{
           fontSize: '18px',
           fontWeight: '500',
-          color: '#16213e', // Dark text on yellow
+          color: '#16213e',
           opacity: '0.8',
           letterSpacing: '2px',
           textTransform: 'uppercase'
@@ -187,44 +187,6 @@ export default function Preloader() {
               transform: translate(-50%, -50%) scale(1.5);
               opacity: 0;
             }
-          }
-          
-          .mil-preloader-complete {
-            opacity: 0;
-            transform: scale(1.1);
-            pointer-events: none;
-          }
-          
-          /* Back to top button animation */
-          @keyframes shutterUp {
-            0% {
-              transform: translateY(100px);
-              opacity: 0;
-            }
-            100% {
-              transform: translateY(0);
-              opacity: 1;
-            }
-          }
-          
-          .progress-wrap {
-            animation: shutterUp 0.6s ease-out forwards;
-          }
-          
-          /* Content reveal animation */
-          @keyframes contentReveal {
-            0% {
-              opacity: 0;
-              transform: translateY(20px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0);
-            }
-          }
-          
-          #smooth-content {
-            animation: contentReveal 0.8s ease-out forwards;
           }
         `}
       </style>
