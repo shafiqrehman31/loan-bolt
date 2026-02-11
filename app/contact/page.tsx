@@ -21,8 +21,7 @@ export default function ContactPage() {
                   Get in <span className="mil-accent">Touch</span>
                 </h1>
                 <p className={`${styles.textLg} mil-soft mil-mb-40 mil-up`}>
-                  Have questions about loans, applications, or need support? 
-                  Our team is ready to help you with all your financial needs.
+                  Questions about loans or need support? Our friendly team is here to help every step of the way.
                 </p>
               </div>
             </div>

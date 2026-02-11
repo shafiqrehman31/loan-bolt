@@ -20,22 +20,22 @@ export default function AboutPage() {
     {
       icon: 'fas fa-handshake',
       title: 'Transparency',
-      description: 'No hidden fees or surprises. We believe in complete clarity about rates, terms, and conditions from day one.'
+      description: 'No hidden fees or surprises. We provide complete clarity on rates, terms, and conditions from day one.'
     },
     {
       icon: 'fas fa-bolt',
       title: 'Speed',
-      description: 'Technology-driven processes that deliver quick decisions and faster funding when you need it most.'
+      description: 'Our technology-driven processes deliver quick decisions and faster funding when you need it most.'
     },
     {
       icon: 'fas fa-shield-alt',
       title: 'Security',
-      description: 'Bank-level encryption and security protocols to protect your personal and financial information.'
+      description: 'We use bank-level encryption and advanced security protocols to protect your personal and financial information.'
     },
     {
       icon: 'fas fa-users',
       title: 'Accessibility',
-      description: 'Financial solutions designed for real people, with options for various credit backgrounds.'
+      description: 'Financial solutions designed for real people, with options available for a variety of credit backgrounds.'
     },
     {
       icon: 'fas fa-heart',
@@ -45,7 +45,7 @@ export default function AboutPage() {
     {
       icon: 'fas fa-chart-line',
       title: 'Innovation',
-      description: 'Continually improving our platform to provide smarter, more efficient lending solutions.'
+      description: 'We continuously improve our platform to offer smarter, faster, and more efficient lending solutions.'
     }
   ];
 
@@ -59,13 +59,11 @@ export default function AboutPage() {
               <div className={styles.heroContent}>
                 <span className={styles.badge}>About Loan Bolt</span>
                 <h1 className="mil-mb-40 mil-up">
-                  Revolutionizing <span className="mil-accent">Online Lending</span> 
-                  <br />with Speed & Transparency
+                  Lending Made  <span className="mil-accent">Simple</span> 
+                 
                 </h1>
                 <p className={`${styles.textLg} mil-mb-50 mil-up`}>
-                  Loan Bolt is designed to help individuals access loan options quickly and conveniently. 
-                  Our goal is to remove confusion from the borrowing process by offering a straightforward, 
-                  secure, and transparent experience.
+                  Loan Bolt helps you access loan options quickly and securely, providing a straightforward and transparent borrowing experience.
                 </p>
                 <div className="mil-up">
                   <Link href="/contact" className="mil-btn mil-md mil-add-arrow mil-mr-15">
@@ -115,16 +113,12 @@ export default function AboutPage() {
             <div className="col-xl-6">
               <div className={`${styles.pl60} mil-up`}>
                 <span className={styles.badge}>Our Mission</span>
-                <h2 className="mil-mb-30">Making Borrowing Accessible to All</h2>
+                <h2 className="mil-mb-30">Making Borrowing Accessible to <span className="mil-accent">All</span></h2>
                 <p className="mil-text-m mil-soft mil-mb-30">
-                  At Loan Bolt, we're on a mission to democratize access to credit. We believe that 
-                  everyone deserves a fair chance at financial stability, regardless of their credit 
-                  history or background.
+                 At <span className="mil-accent">Loan Bolt,</span> our mission is to make access to credit simple and fair for everyone, regardless of credit history or background.
                 </p>
                 <p className="mil-text-m mil-soft">
-                  We've built our platform from the ground up to prioritize speed, transparency, and 
-                  customer care. By leveraging advanced technology and maintaining human-centered 
-                  design, we're creating a lending experience that actually works for people.
+                 We’ve designed our platform to prioritize speed, transparency, and customer care. By combining advanced technology with a human-centered approach, we deliver a lending experience that truly works for people.
                 </p>
               </div>
             </div>
@@ -140,7 +134,7 @@ export default function AboutPage() {
             <span className={styles.badge}>Our Values</span>
             <h2 className="mil-mb-30 mil-up">What We Stand For</h2>
             <p className="mil-text-m mil-soft mil-up">
-              These principles guide everything we do at Loan Bolt
+             Guiding principles that shape every step at <span className="mil-accent">Loan Bolt.</span>
             </p>
           </div>
 

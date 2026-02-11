@@ -6,42 +6,42 @@ const faqItems = [
   {
     id: 1,
     question: "What is Loan Bolt?",
-    answer: "Loan Bolt is an online service that helps users access loan options through a fast and simple application process."
+    answer: "Loan Bolt is an online platform that connects users with participating lenders through a fast and simple loan request process. We are not a direct lender."
   },
   {
     id: 2,
     question: "How much can I borrow?",
-    answer: "Available loan amounts range from $100 to $5,000, depending on eligibility and other factors."
+    answer: "Loan amounts typically range from $100 to $5,000, depending on lender participation, state regulations, and your eligibility."
   },
   {
     id: 3,
     question: "Are loans available in my state?",
-    answer: "Loan availability varies by state regulations. Options will be shown based on your location once you apply."
+    answer: "Loan availability varies based on state regulations and lender participation. Available options will be presented based on your location after you submit a request."
   },
   {
     id: 4,
     question: "Will my credit be checked?",
-    answer: "A soft credit check may be used to display options and does not affect your score. A hard inquiry may occur before final approval."
+    answer: "Some lenders may perform a soft credit check to review your options, which does not affect your credit score. If you proceed with a loan offer, a lender may conduct a hard credit inquiry before final approval."
   },
   {
     id: 5,
     question: "Can I apply with less-than-perfect credit?",
-    answer: "Yes. Applications from all credit backgrounds are reviewed, along with income and employment details."
+    answer: "Yes. Many lenders consider applications from individuals with various credit backgrounds, along with income and employment information."
   },
   {
     id: 6,
     question: "How fast will I receive the funds?",
-    answer: "Once approved, funds are usually deposited into your bank account the same day or the next business day."
+    answer: "If you accept a loan offer and are approved by the lender, funds are typically deposited into your bank account as soon as the same business day or by the next business day, depending on the lender and your bank."
   },
   {
     id: 7,
     question: "Are there any hidden fees?",
-    answer: "No. All fees and charges are clearly disclosed before you accept any offer."
+    answer: "Loan terms, fees, and repayment details are disclosed by the lender before you accept any offer. Be sure to review all terms carefully."
   },
   {
     id: 8,
     question: "Can I repay early?",
-    answer: "Yes. Early repayment is allowed and may help reduce total interest costs."
+    answer: "Many lenders allow early repayment, which may reduce the total cost of your loan. Please review your lender’s specific terms for details."
   },
   {
     id: 9,
@@ -116,7 +116,7 @@ export default function FAQ() {
               <div className="mil-contact-info mil-up">
                 <h4 className="mil-mb-20">Still have questions?</h4>
                 <p className="mil-text-m mil-mb-30">
-                  Can't find the answer you're looking for? Please chat with our friendly team.
+                 Can’t find the answer you’re looking for? Please reach out to our friendly support team for assistance.
                 </p>
                 <div className="mil-up">
                   <a href="mailto:contact@loan-bolt.com" className="mil-btn mil-md mil-add-arrow">

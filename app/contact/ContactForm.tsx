@@ -48,7 +48,7 @@ export default function ContactForm() {
       <div className={styles.formHeader}>
         <h3>Send us a Message</h3>
         <p className="mil-text-m mil-soft">
-          Have questions? Fill out the form below and our team will get back to you within 24 hours.
+          Got questions? Complete the form below, and our team will get back to you within 24 hours.
         </p>
       </div>
 
