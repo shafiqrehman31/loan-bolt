@@ -7,11 +7,10 @@ export default function FinalCTA() {
           <div className="row justify-content-between align-items-center">
             <div className="col-xl-7 mil-mt-60">
               <h2 className="mil-mb-30 mil-up">
-                Get Your Loan Approved in <span className="mil-accent">24 Hours</span>
+                Get Connected with Lenders in as Little as<span className="mil-accent"> 24 Hours</span>
               </h2>
               <p className="mil-text-m mil-mb-60 mil-up">
-                Fast, secure, and transparent lending process with competitive rates.<br />
-                Join thousands of satisfied customers today.
+                Access a fast, secure, and transparent process with competitive loan options.<br /> Join thousands of satisfied customers today.
               </p>
               <div className="mil-up">
                 <a href="/contact" className="mil-btn mil-md mil-add-arrow">

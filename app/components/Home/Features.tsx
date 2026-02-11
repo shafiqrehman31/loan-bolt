@@ -24,14 +24,13 @@ export default function Features() {
           <div className="col-xl-6 mil-mb-80">
             <h2 className="mil-mb-30 mil-up">Why People Choose <br />Using Loan Bolt</h2>
             
-            <p>We focus on speed, simplicity, and trust making borrowing easier for everyday situations.</p> <br></br>
+            <p>We focus on speed, simplicity, and trust, making borrowing easier for everyday situations.</p> <br></br>
             <ul className="mil-list-1">
               <li>
                 <div className="mil-up">
                   <h5 className="mil-mb-15 mil-up">Fast Application</h5>
                   <p className="mil-text-m mil-soft mil-up">
-                    Our streamlined online form takes just minutes to complete, <br /> saving you time and effort.
-                    complications or delays.
+                    Our streamlined online form takes just minutes to complete,<br /> saving you time and effort with no complications or delays.
                   </p>
                 </div>
               </li>
@@ -40,7 +39,6 @@ export default function Features() {
                   <h5 className="mil-mb-15 mil-up">Clear & Honest Terms</h5>
                   <p className="mil-text-m mil-soft mil-up">
                     All loan details are shared upfront so you know exactly<br /> what to expect before moving forward.
-                    security protocols.
                   </p>
                 </div>
               </li>
@@ -48,7 +46,7 @@ export default function Features() {
                 <div className="mil-up">
                   <h5 className="mil-mb-15 mil-up">Secure Information</h5>
                   <p className="mil-text-m mil-soft mil-up">
-                   Your personal and financial details are protected using<br /> modern security standards.
+                  Your personal and financial details are protected using<br />  modern security standards.
                   
                   </p>
                 </div>
@@ -57,6 +55,7 @@ export default function Features() {
                 <div className="mil-up">
                   <h5 className="mil-mb-15 mil-up">Built for U.S. Borrowers</h5>
                   <p className="mil-text-m mil-soft mil-up">
+                  Loan availability is based on state regulations and lender <br />participation across the United States.
                   Loan availability is based on state regulations and lender <br /> participation across the USA. 
                   
                   </p>
